@@ -1,6 +1,9 @@
 package gui;
 
+import gui.util.Alerta;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 
 public class ViewControler {
@@ -10,7 +13,7 @@ public class ViewControler {
 	
 	@FXML
 	public void onActionButton() {
-		System.out.println("teste");
+		Alerta.alerta("Um problema aconteceu","Cuidado","ERROR 565", AlertType.WARNING );
 	}
 	
 }
